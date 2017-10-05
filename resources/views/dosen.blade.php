@@ -1,71 +1,9 @@
-<!doctype html>
-<html class="no-js" lang="en">
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Foundation | Welcome</title>
-    <link rel="stylesheet" href="http://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
+@extends('layouts.app')
 
-</head>
-<body>
-
-<!-- Start Top Bar -->
-<div class="top-bar">
-    <div class="top-bar-left">
-        <ul class="menu">
-            <li class="menu-text">Jurusan Teknik Informatika</li>
-        </ul>
-    </div>
-    <div class="top-bar-right">
-        <ul class="dropdown menu" data-dropdown-menu>
-            <li class="menu-text"></li>
-            <li><a href="home">Beranda</a></li>
-            <li>
-                <a href="#">Tentang</a>
-                <ul class="menu vertical">
-                    <li><a href="#">Sejarah</a></li>
-                    <li><a href="#">Visi & Misi</a></li>
-                    <li><a href="#">Prodi</a></li>
-                    <li><a href="#">Struktur Organisasi</a></li>
-                    <li><a href="#">Tata Lokasi</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#">Dosen & Staff</a>
-                <ul class="menu vertical">
-                    <li><a href="dosen">Dosen</a></li>
-                    <li><a href="#">Staff</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#">Sarana & Prasarana</a>
-                <ul class="menu vertical">
-                    <li><a href="#">Ruang Kuliah</a></li>
-                    <li><a href="#">Lab RPL</a></li>
-                    <li><a href="#">Lab JARKOM</a></li>
-                    <li><a href="#">Lab SI</a></li>
-                    <li><a href="#">Lab MMK</a></li>
-                    <li><a href="#">Ruang Baca</a></li>
-                </ul>
-            </li>
-            <li><a href="#">Galeri</a></li>
-            <li>
-                <a href="#">Akademik</a>
-                <ul class="menu vertical">
-                    <li><a href="#">Pengumuman</a></li>
-                    <li><a href="#">Tugas Akhir</a></li>
-                    <li><a href="#">Cumloute</a></li>
-                    <li><a href="#">Juara</a></li>
-                </ul>
-            </li>
-        </ul>
-    </div>
-</div>
-
-<!-- End Top Bar -->
-
-<div class="row column text-center">
-    <div class="callout primary">
+@section('content')
+<br>
+    <div class="row column text-center">
+    <div>
         <h4>DOSEN JURUSAN TEKNIK INFORMATIKA</h4>
         <h4>UNIVERSITAS NEGERI SURABAYA</h4>
     </div>
@@ -95,8 +33,6 @@
     </div>
 </div>
 </div>
-
-<hr>
 
 <hr>
 
@@ -145,40 +81,5 @@
 </div>
 
 <hr>
-<div class="row">
 
-    </div>
-
-
-<div class="callout large secondary">
-    <div class="row">
-        <div class="large-4 columns">
-            <h5>Vivamus Hendrerit Arcu Sed Erat Molestie</h5>
-            <p>Curabitur vulputate, ligula lacinia scelerisque tempor, lacus lacus ornare ante, ac egestas est urna sit amet arcu. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed molestie augue sit.</p>
-        </div>
-        <div class="large-3 large-offset-2 columns">
-            <ul class="menu vertical">
-                <li><a href="#">One</a></li>
-                <li><a href="#">Two</a></li>
-                <li><a href="#">Three</a></li>
-                <li><a href="#">Four</a></li>
-            </ul>
-        </div>
-        <div class="large-3 columns">
-            <ul class="menu vertical">
-                <li><a href="#">One</a></li>
-                <li><a href="#">Two</a></li>
-                <li><a href="#">Three</a></li>
-                <li><a href="#">Four</a></li>
-            </ul>
-        </div>
-    </div>
-</div>
-
-<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-<script src="http://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
-<script>
-    $(document).foundation();
-</script>
-</body>
-</html>
+@endsection

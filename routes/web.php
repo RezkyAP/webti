@@ -12,12 +12,12 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
 
 Auth::routes();
 //
-//Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home', 'HomeController@index')->name('home');
 //
 //Route::get('/dosen', 'HomeController@index')->name('dosen');
 
@@ -29,4 +29,22 @@ Route::get('/home', function () {
 });
 Route::get('/galeri', function () {
     return view('galeri');
+});
+Route::get('/sejarah', function () {
+    return view('sejarah');
+});
+Route::get('/visimisi', function () {
+    return view('visimisi');
+});
+Route::get('/prodiPTI', function () {
+    return view('prodiPTI');
+});
+Route::get('/prodiMI', function () {
+    return view('prodiMI');
+});
+Route::get('/prodiTI', function () {
+    return view('prodiTI');
+});
+Route::get('/prodiSI', function () {
+    return view('prodiSI');
 });
