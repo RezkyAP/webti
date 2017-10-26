@@ -6,13 +6,12 @@ use Illuminate\Database\Eloquent\Model;
 
 class Beasiswa extends Model
 {
-    public $timestamps = false;
 
     protected $table = 'beasiswa';
 
-    protected $keyType = 'string';
+    protected $primaryKey = 'id';
 
     protected $fillable = [
-        'id', 'namabeasiswa','foto', 'deskripsi'
+        'namabeasiswa','foto', 'deskripsi', 'created_at','updated_at'
     ];
 }

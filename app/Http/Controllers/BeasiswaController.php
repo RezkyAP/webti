@@ -12,4 +12,10 @@ class BeasiswaController extends Controller
             'listbeasiswa' => Beasiswa::all()
         ]);
     }
+
+    public function spec(Request $request){
+        return view('detailbeasiswa',[
+            'deskripsibeasiswa' => Beasiswa::find($request->id)
+        ]);
+    }
 }

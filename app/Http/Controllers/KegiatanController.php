@@ -12,4 +12,9 @@ class KegiatanController extends Controller
             'listkegiatan' => Kegiatan::all()
         ]);
     }
+    public function spec(Request $request){
+        return view('detailkegiatan',[
+            'deskripsikegiatan' => Kegiatan::find($request->id)
+        ]);
+    }
 }
