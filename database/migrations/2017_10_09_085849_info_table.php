@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class SaranaTable extends Migration
+class InfoTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,12 @@ class SaranaTable extends Migration
      */
     public function up()
     {
-        Schema::create('sarana', function (Blueprint $table) {
+        Schema::create('info', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('nama');
+            $table->string('namainfo');
             $table->text('foto')->nullable();
             $table->text('deskripsi');
+            $table->timestamps();
         });
     }
 
